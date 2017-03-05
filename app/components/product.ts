@@ -5,7 +5,7 @@ import {Component, EventEmitter} from '@angular/core';
     moduleId: module.id,
     inputs: ['product'],
     outputs: ['select'],
-    template: `<div class="product-image" [ngStyle]="{'background-image': 'url(src/img_' + product.id +'.jpg)'}">
+    template: `<div class="product-image" [ngStyle]="{'background-image': 'url(app/src/img_' + product.id +'.jpg)'}">
         </div>
         <div class="product-detail"> {{product.name}} </div>
         <div class="product-detail"> {{product.price}} </div>

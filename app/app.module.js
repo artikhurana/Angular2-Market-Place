@@ -8,9 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
 var components_1 = require("./components/components");
 var http_1 = require("@angular/http");
+var forms_1 = require("@angular/forms");
 require("rxjs/add/operator/map");
+var appRoutes = [
+    { path: '', component: components_1.BasicForm },
+    { path: 'market', component: components_1.AppComponent }
+];
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,10 +24,15 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, http_1.HttpModule, http_1.JsonpModule
+        imports: [
+            router_1.RouterModule.forRoot(appRoutes),
+            platform_browser_1.BrowserModule,
+            http_1.HttpModule,
+            http_1.JsonpModule,
+            forms_1.FormsModule
         ],
-        declarations: [components_1.AppComponent, components_1.Rating, components_1.Product],
-        bootstrap: [components_1.AppComponent]
+        declarations: [components_1.AppComponent, components_1.Rating, components_1.Product, components_1.BasicForm, components_1.ModelBasicForm, components_1.App],
+        bootstrap: [components_1.App]
     })
 ], AppModule);
 exports.AppModule = AppModule;
