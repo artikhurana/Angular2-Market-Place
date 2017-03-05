@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="header"> Arti Market Place</div>
+    <div class="cart fa fa-shopping-cart"> {{selectedProducts.length}}</div>
+    <div class="product" *ngFor="let product of products"
+        [ngClass]="{'select': product.selected}">
+        <product
+              [product]="product"
+              (select)="add(product)">
+        </product>
+        <!--<div class="product-image" [ngStyle]="{'background-image': 'url(src/img_' + product.id +'.jpg)'}">
+        </div>
+        <div class="product-detail"> {{product.name}} </div>
+        <div class="product-detail"> {{product.price}} </div>
+        <div class="product-detail">
+            <rate [rating]="product.rating"> </rate>
+        </div>-->
+        <!--<button type="button" (click)="add(product)"> Add to Cart</button>-->
+        <!--<div class="product-detail"> {{product.rating}} </div>-->
+    </div>
+</div>

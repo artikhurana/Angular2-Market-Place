@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "motoX",
+            "price": 10000,
+            "rating": 1
+        },
+        {
+            "id": 2,
+            "name": "motoG",
+            "price": 20000,
+            "rating": 2
+        },
+        {
+            "id": 3,
+            "name": "motoG4",
+            "price": 12000,
+            "rating": 3
+        },
+        {
+            "id": 4,
+            "name": "motoY",
+            "price": 15000,
+            "rating": 4
+        },
+           {
+            "id": 5,
+            "name": "motoY",
+            "price": 15000,
+            "rating": 4
+        },
+           {
+            "id": 6,
+            "name": "motoY",
+            "price": 15000,
+            "rating": 4
+        },
+           {
+            "id": 7,
+            "name": "motoY",
+            "price": 15000,
+            "rating": 4
+        },
+           {
+            "id": 8,
+            "name": "motoY",
+            "price": 15000,
+            "rating": 4
+        }
+    ]
+}
