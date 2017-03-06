@@ -8,6 +8,7 @@ exports.Product = product_1.Product;
 var form_1 = require("./basic-form/form");
 exports.BasicForm = form_1.BasicForm;
 exports.ModelBasicForm = form_1.ModelBasicForm;
+exports.AppChild = form_1.AppChild;
 var app_1 = require("./app");
 exports.App = app_1.App;
 //# sourceMappingURL=components.js.map

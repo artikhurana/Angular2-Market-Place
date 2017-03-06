@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Address Section</h1>
+    <form #myForm="ngForm">
+       <span class="form-group">
+            <label for="country"> country</label>
+            <input type="text" id="country" required
+                [(ngModel)]="userInfo.country" name="country" #country="ngModel">
+        </span>
+        <span class="form-group">
+            <label for="state"> state</label>
+            <input type="text" id="state" required
+                [(ngModel)]="userInfo.state" name="state" #state="ngModel">
+        </span>
+        <span class="form-group">
+            <label for="city"> city</label>
+            <input type="text" id="city" required
+                [(ngModel)]="userInfo.city" name="city" #city="ngModel">
+        </span>
+        <span class="form-group">
+            <label for="street"> country</label>
+            <input type="text" id="street" required
+                [(ngModel)]="userInfo.street" name="street" #street="ngModel">
+        </span>
+        <!--<span class="buttons">
+            <button type="submit" (click)="add(myForm)">Add More</button>
+      </span>-->
+    </form>
+</div>

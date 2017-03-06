@@ -2,7 +2,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent, Rating , Product, BasicForm, ModelBasicForm, App} from './components/components';
+import { AppComponent, Rating , Product, BasicForm, ModelBasicForm, App, AppChild}
+        from './components/components';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import 'rxjs/add/operator/map';
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
         JsonpModule,
         FormsModule
     ],
-    declarations: [ AppComponent, Rating, Product, BasicForm, ModelBasicForm, App],
+    entryComponents: [AppChild],
+    declarations: [ AppComponent, Rating, Product, BasicForm, ModelBasicForm, App,AppChild],
     bootstrap: [ App ]
 })
 export class AppModule {

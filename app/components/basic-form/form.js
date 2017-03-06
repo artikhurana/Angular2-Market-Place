@@ -4,4 +4,5 @@ function __export(m) {
 }
 __export(require("./templete-driven-basic-form/basic-form"));
 __export(require("./model-driven-basic-form/model-basic-form"));
+__export(require("./basic-child-comp"));
 //# sourceMappingURL=form.js.map

@@ -31,7 +31,8 @@ AppModule = __decorate([
             http_1.JsonpModule,
             forms_1.FormsModule
         ],
-        declarations: [components_1.AppComponent, components_1.Rating, components_1.Product, components_1.BasicForm, components_1.ModelBasicForm, components_1.App],
+        entryComponents: [components_1.AppChild],
+        declarations: [components_1.AppComponent, components_1.Rating, components_1.Product, components_1.BasicForm, components_1.ModelBasicForm, components_1.App, components_1.AppChild],
         bootstrap: [components_1.App]
     })
 ], AppModule);

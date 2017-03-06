@@ -1,6 +1,6 @@
 <div class="conatiner">
         <h1> User Form </h1>
-        <form  #myForm="ngForm"  action="/mock-practice" method="POST">
+        <form  #myForm="ngForm"  action="./mock-practice" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" required
@@ -23,9 +23,14 @@
              <!--<button type="submit" [disabled]="!myForm.form.valid">Submit</button>-->
               <button type="submit" [disabled]="!myForm.form.valid"
                     (click)="save(myForm.value, myForm.valid)">
-                    <a routerLink="/market" routerLinkActive="active">Submit</a>
+                    <a routerLink="/market" routerLinkActive="active">Market</a>
             </button>
+            <input type="submit" value="Real Submit"/>
         </form>
+          <div #parent></div>
+           <div class="buttons">
+                <button type="submit" (click)="add(myForm)">Add More</button>
+            </div>
           <div class="margin-20" *ngIf="submitted">
             <div>Form details:-</div>
             <pre>Is form valid?: <br>{{myForm.valid | json}}</pre>
